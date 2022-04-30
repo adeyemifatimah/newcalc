@@ -13,7 +13,6 @@
 </head>
 
 <body>
-
     <form id="calculator">
         <label for="number1">First Number</label> <br><br>
         <input class="form-control" type="number" id="number1" placeholder="Enter a Number" required><br>
@@ -22,21 +21,51 @@
         <label for="number2">Second Number</label><br><br>
         <input class="form-control" type="number" id="number2" placeholder="Enter another number" required> <br>
 
-<div>
+        <div class="radio">
 
-    <label for="radio"></label>
-    <input type="radio">
+            <label>
+                <input type="radio" name="operator" value="addition" checked>
+                addition
+            </label>
+        </div>
+
+        <div class="radio">
+
+            <label>
+                <input type="radio" name="operator" value="subtraction">
+                subtraction
+            </label>
+        </div>
+
+        <div class="radio">
+
+            <label>
+                <input type="radio" name="operator" value="dividion">
+                division
+            </label>
+        </div>
+        <div class="radio">
+
+            <label>
+                <input type="radio" name="operator" value="multiplication">
+                multiplication
+            </label>
+        </div>
+
+        <div>
+
+            <label>
+                <input type="radio" name="operator" value="modulo">
+                modulo
+            </label>
+        </div>
 
 
 
 
-</div>
 
+        <button type="submit">=</button>
 
-
-
-
-<button type="submit">=</button>
 
     </form>
-    
+</body>
