@@ -36,17 +36,47 @@ $(document).ready(function () {
         event.preventDefault()
 
 
-        const number1 = parseInt$("#num1").val();
-        const number2 = parseInt$("#num2").val();
+        const number1 = parseInt($("#num1").val());
+        const number2 = parseInt($("#num2").val());
 
 
 
-const
+        const operator = $("input:radio[name=operator]:checked").val();
+
+
+        if (operator = addition) {
+
+            let result = add(number1, number2);
+        }
+
+
+        else if(operator = subtraction) {
+
+            let result = subtract(number1, number2);
+        }
+
+        else if(operator = division) {
+
+            let result = divide(number1, number2);
+
+        }
 
 
 
 
+        else if(operator = multiplication) {
 
+            let result = multiply(number1, number2);
+
+        }
+
+
+        
+        else if(operator = modulo) {
+
+            let result = module(number1, number2);
+
+        }
 
 
 
